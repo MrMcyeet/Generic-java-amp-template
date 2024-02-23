@@ -1,0 +1,72 @@
+[
+    {
+        "DisplayName": "Starting Memory",
+        "Category": "Jvm Flags",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "InitialMemory",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "InitialMemory",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "512",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Max Memory",
+        "Category": "Jvm Flags",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "MaxMemory",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "MaxMemory",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "1024",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Additional Startup Flags",
+        "Category": "App",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "OtherFlags",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "OtherFlags",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Jar",
+        "Category": "App",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "Jar",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "Jar",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "Program.jar",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Java Version",
+        "Category": "Jvm Configuration",
+        "Description": "Sets the (major) java version this app needs (e.g. 8, 11, 17, 21)",
+        "Keywords": "",
+        "FieldName": "JvmVer",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "JvmVer",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "8",
+        "EnumValues": {
+            "8":"8",
+            "11":"11",
+            "17":"17",
+            "21":"21"
+        }
+    }
+]

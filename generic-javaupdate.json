@@ -1,0 +1,37 @@
+[
+    {
+        "UpdateStageName":"Java Download",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://download.oracle.com/java/{{JvmVer}}/latest/jdk-{{JvmVer}}_linux-x64_bin.tar.gz",
+        "UpdateSourceArch":"x86_64",
+        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "UnzipUpdateSource":true,
+        "OverwriteExistingFiles":true,
+        "DeleteAfterExtract":true
+    },
+    {
+        "UpdateStageName":"Java Download",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://download.oracle.com/java/{{JvmVer}}/latest/jdk-{{JvmVer}}_linux-aarch64_bin.tar.gz",
+        "UpdateSourceArch":"aarch64",
+        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "UnzipUpdateSource":true,
+        "OverwriteExistingFiles":true,
+        "DeleteAfterExtract":true
+    },
+    {
+        "UpdateStageName":"Replace Java Directory",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'rm -rf ./generic-java/java ; mv ./generic-java/jdk* ./generic-java/java ; chmod +x ./generic-java/java/bin/java'"
+    },
+    {
+        "UpdateStageName":"Pause Update Stages",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"Pause",
+        "UpdateSourceArgs":"2"
+    }
+]
