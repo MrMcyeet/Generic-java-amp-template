@@ -1,8 +1,8 @@
 [
     {
         "DisplayName": "Starting Memory",
-        "Category": "Jvm Flags",
-        "Description": "",
+        "Category": "Application Configuration",
+        "Description": "The initial heap size you want to allocate",
         "Keywords": "",
         "FieldName": "InitialMemory",
         "InputType": "number",
@@ -14,8 +14,8 @@
     },
     {
         "DisplayName": "Max Memory",
-        "Category": "Jvm Flags",
-        "Description": "",
+        "Category": "Application Configuration",
+        "Description": "The maximum heap size you want to allocate",
         "Keywords": "",
         "FieldName": "MaxMemory",
         "InputType": "number",
@@ -27,8 +27,8 @@
     },
     {
         "DisplayName": "Additional Startup Flags",
-        "Category": "App",
-        "Description": "",
+        "Category": "Application Configuration",
+        "Description": "Any flags you want to pass to your program. Passed after the .jar (e.g. -nogui)",
         "Keywords": "",
         "FieldName": "OtherFlags",
         "InputType": "text",
@@ -40,8 +40,8 @@
     },
     {
         "DisplayName": "Jar",
-        "Category": "App",
-        "Description": "",
+        "Category": "Application Configuration",
+        "Description": "The actual .jar you wish to run (should end in '.jar')",
         "Keywords": "",
         "FieldName": "Jar",
         "InputType": "text",
@@ -53,15 +53,15 @@
     },
     {
         "DisplayName": "Java Version",
-        "Category": "Jvm Configuration",
+        "Category": "Application Configuration",
         "Description": "Sets the (major) java version this app needs (e.g. 8, 11, 17, 21)",
         "Keywords": "",
         "FieldName": "JvmVer",
-        "InputType": "number",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "JvmVer",
         "IncludeInCommandLine": false,
-        "DefaultValue": "8",
+        "DefaultValue": "17",
         "EnumValues": {
             "8":"8",
             "11":"11",
